@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import PortfolioPage from "./pages/portfolioPage/PortfolioPage";
+import NamePage from "./pages/namePage/NamePage";
 
 function App() {
+    const arr = ["Mahabat", "Aigul"]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PortfolioPage user={arr}/>
+
+        ---------------------------------
+
+      <NamePage array={arr}/>
+
+
+
     </div>
   );
 }
